@@ -46,6 +46,7 @@ public class C03_DriverManageMetodları {
         // pencereyi istedigimiz boyut ve konuma getirelim
         Thread.sleep(1000);
         driver.manage().window().setPosition(new Point(50,50));
+        Thread.sleep(5000);
         driver.manage().window().setSize(new Dimension(500,500));
         System.out.println("istedigimiz konum : "+driver.manage().window().getPosition()); //
         System.out.println("istedigimiz boyut : "+driver.manage().window().getSize());//

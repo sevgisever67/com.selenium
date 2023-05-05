@@ -13,15 +13,16 @@ public class C05_DriverNavigateMetodları {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("http://amazon.com");
         Thread.sleep(2000);
-        driver.navigate().to("http://wisequarter.com");
-        Thread.sleep(2000);
-        driver.navigate().back();
-        Thread.sleep(2000);
+       driver.navigate().to("http://wisequarter.com");
+      // Thread.sleep(2000);
+      // driver.navigate().back();
+      // Thread.sleep(2000);
 
-        driver.navigate().forward();
-        driver.navigate().refresh();
+      // driver.navigate().forward();
+      // driver.navigate().refresh();
 
-        driver.close();
+        driver.switchTo();
+       // driver.close();
 
     }
 
